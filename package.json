@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build --no-lint",
     "start": "next start",
-    "lint": "next lint"
   },
   "dependencies": {
     "@frostui/tailwindcss": "^0.1.5",
