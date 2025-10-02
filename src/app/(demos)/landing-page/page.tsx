@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Navigation from "@/components/Navigation";
 import Waitlist from "@/components/Waitlist";
 import Features from "@/components/Features";
+import GetApp from "@/components/GetApp";
 
 
 
@@ -20,8 +21,8 @@ const page = () => {
       <Waitlist/>
       
       <Partner />
+      <GetApp />
       <Closing/>
-      
       <Footer />
     </>
   );
