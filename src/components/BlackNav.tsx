@@ -61,7 +61,7 @@ const BlackNav = () => {
                 className="navbar-nav flex-col lg:flex-row gap-y-2 flex lg:items-center justify-center"
                 id="navbar-navlist"
               >
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark all duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark all duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#home"
@@ -69,7 +69,7 @@ const BlackNav = () => {
                     Home
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#services"
@@ -77,7 +77,7 @@ const BlackNav = () => {
                     Services
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#features"
@@ -85,7 +85,7 @@ const BlackNav = () => {
                     Features
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#about"
@@ -93,7 +93,7 @@ const BlackNav = () => {
                     About
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#pricing"
@@ -101,7 +101,7 @@ const BlackNav = () => {
                     Pricing
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#testimonial"
@@ -109,7 +109,7 @@ const BlackNav = () => {
                     Testimonials
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#blog"
@@ -117,7 +117,7 @@ const BlackNav = () => {
                     Blog
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-white group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#contact"
@@ -130,7 +130,7 @@ const BlackNav = () => {
             <div className="ms-auto shrink hidden lg:inline-flex gap-2">
               <a
                 href="#"
-                className="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium"
+                className="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-[#05d3f7] hover:bg-[#014bac] transition-all duration-500 font-medium"
               >
                 <IconifyIcon
                   icon="lucide:download-cloud"

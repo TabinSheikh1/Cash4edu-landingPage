@@ -100,7 +100,7 @@ const Partner = () => {
             />
           </div>
           <div className="lg:ms-5 ms-8">
-            <span className="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">
+            <span className="text-sm text-[#014bac] uppercase font-semibold tracking-wider text-default-950">
               Our Partner
             </span>
             <h2
@@ -122,7 +122,7 @@ const Partner = () => {
             </div>
             <button
               ref={btnRef}
-              className="mt-6 bg-gradient-to-r from-blue-400 to-blue-700 px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300"
+              className="mt-6 bg-gradient-to-r from-[#05d3f7] to-[#014bac] px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300"
             >
               Become a Partner
             </button>

@@ -94,7 +94,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 items-center gap-6">
           <div className="lg:ms-5 ms-8">
             <div>
-              <span className="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">
+              <span className="text-sm text-[#014bac] uppercase font-semibold tracking-wider text-default-950">
                 About Us
               </span>
             </div>
@@ -166,7 +166,7 @@ const About = () => {
               height={200}
             />
             {/* Floating animated accent */}
-            <div className="absolute top-10 right-10 w-16 h-16 bg-gradient-to-br from-blue-400 to-pink-400 rounded-full blur-2xl opacity-40 animate-pulse pointer-events-none"></div>
+            <div className="absolute top-10 right-10 w-16 h-16 bg-gradient-to-br from-[#05d3f7] to-[#014bac] rounded-full blur-2xl opacity-40 animate-pulse pointer-events-none"></div>
           </div>
         </div>
       </div>

@@ -88,7 +88,7 @@ const Navigation = () => {
                 className="navbar-nav flex-col lg:flex-row gap-y-2 flex lg:items-center justify-center"
                 id="navbar-navlist"
               >
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark all duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark all duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#home"
@@ -96,7 +96,7 @@ const Navigation = () => {
                     Home
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#about"
@@ -104,7 +104,7 @@ const Navigation = () => {
                     About
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#features"
@@ -112,7 +112,7 @@ const Navigation = () => {
                     Features
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#waitlist"
@@ -120,7 +120,7 @@ const Navigation = () => {
                     Waitlist
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#partner"
@@ -128,7 +128,7 @@ const Navigation = () => {
                     Partner
                   </a>
                 </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#closing"

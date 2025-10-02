@@ -93,16 +93,16 @@ const Hero = () => {
       ref={sectionRef}
     >
       {/* Decorative Modern Blobs */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-200 rounded-full opacity-30 blur-3xl pointer-events-none"></div>
-      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-pink-200 rounded-full opacity-30 blur-3xl pointer-events-none"></div>
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#05d3f7] rounded-full opacity-30 blur-3xl pointer-events-none"></div>
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#014bac] rounded-full opacity-30 blur-3xl pointer-events-none"></div>
       <div className="container">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 items-center">
           <div>
             <h1
               ref={headlineRef}
-              className="text-3xl md:text-5xl/tight lg:text-6xl/tight text-[#002366] tracking-normal capitalize leading-normal font-bold max-w-2xl"
+              className="text-3xl md:text-5xl/tight lg:text-6xl/tight text-[#014bac] tracking-normal capitalize leading-normal font-bold max-w-2xl"
             >
-              Where Learning Meets <span className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">Opportunity</span>
+              Where Learning Meets <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">Opportunity</span>
             </h1>
             <p
               ref={subRef}
@@ -114,10 +114,10 @@ const Hero = () => {
               ref={btnsRef}
               className="flex flex-wrap mt-9 text-center gap-3"
             >
-              <button className="bg-gradient-to-r from-blue-400 to-blue-700 px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300">
+              <button className="bg-gradient-to-r from-[#05d3f7] to-[#014bac] px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300">
                 Join the Waitlist
               </button>
-              <button className="py-2 px-6 text-primary rounded-md border border-primary text-base hover:border-primary hover:bg-primary hover:text-white transition-all duration-500 font-medium">
+              <button className="py-2 px-6 text-[#014bac] rounded-md border border-[#014bac] text-base hover:border-[#014bac] hover:bg-[#014bac] hover:text-white transition-all duration-500 font-medium">
                 Partner with Us
               </button>
             </div>
@@ -130,7 +130,7 @@ const Hero = () => {
               priority
             />
             {/* Floating animated accent */}
-            <div className="absolute top-10 right-10 w-16 h-16 bg-gradient-to-br from-blue-400 to-pink-400 rounded-full blur-2xl opacity-40 animate-pulse pointer-events-none"></div>
+            <div className="absolute top-10 right-10 w-16 h-16 bg-gradient-to-br from-[#05d3f7] to-[#014bac] rounded-full blur-2xl opacity-40 animate-pulse pointer-events-none"></div>
           </div>
         </div>
       </div>

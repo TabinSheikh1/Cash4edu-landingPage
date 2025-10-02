@@ -10,7 +10,7 @@ const features = [
         icon: "🎓",
         title: "Scholarship Finder",
         description: "AI-powered matching that helps you find scholarships you actually qualify for.",
-        color: "from-blue-100 to-blue-300 text-blue-700"
+        color: "from-blue-100 to-blue-300 text-[#05d3f7]"
     },
     {
         icon: "📹",
@@ -88,7 +88,7 @@ const FeaturesSection = () => {
             <div className="container mx-auto px-4 w-[95%]">
                 {/* Section Headline */}
                 <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-4 tracking-tight">
-                    Everything You Need in <span className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">One App</span>
+                    Everything You Need in <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">One App</span>
                 </h2>
                 <p className="text-center text-lg text-gray-500 mb-14 max-w-2xl mx-auto">
                     Unlock your academic journey with smart tools, rewards, and a supportive community.
@@ -114,7 +114,7 @@ const FeaturesSection = () => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center group-hover:text-blue-700 transition-colors duration-300">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center group-hover:text-[#014bac] transition-colors duration-300">
                                 {feature.title}
                             </h3>
 
