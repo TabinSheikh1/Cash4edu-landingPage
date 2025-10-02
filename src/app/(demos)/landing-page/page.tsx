@@ -8,6 +8,9 @@ import Navigation from "@/components/Navigation";
 import Waitlist from "@/components/Waitlist";
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
+import Testimonials from "@/components/Testimonials";
+import HowItWorks from "@/components/HowItWorks";
+import Faqs from "@/components/Faqs";
 
 
 
@@ -19,10 +22,13 @@ const page = () => {
       <About />
       <Features />
       <Waitlist/>
-      
+      {/* <HowItWorks /> */}
       <Partner />
       <GetApp />
       <Closing/>
+      <Testimonials />
+      <Faqs />
+      
       <Footer />
     </>
   );
