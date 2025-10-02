@@ -25,10 +25,9 @@ const page = () => {
       {/* <HowItWorks /> */}
       <Partner />
       <GetApp />
-      <Closing/>
-      <Testimonials />
       <Faqs />
-      
+      <Testimonials />
+      <Closing/>
       <Footer />
     </>
   );
