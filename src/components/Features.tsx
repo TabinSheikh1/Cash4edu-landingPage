@@ -99,7 +99,10 @@ const FeaturesSection = () => {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            ref={el => (cardRefs.current[index] = el)}
+                            ref={(el: HTMLDivElement | null) => {
+                                cardRefs.current[index] = el;
+                            }}
+
                             className="group relative flex flex-col items-center p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow bg-white border border-gray-100 hover:-translate-y-2 hover:scale-[1.03] duration-300 cursor-pointer"
                         >
                             {/* Animated Gradient Glow */}
