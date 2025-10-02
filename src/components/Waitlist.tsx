@@ -92,7 +92,7 @@ const Waitlist = () => {
             <div className="max-w-xl w-full mx-auto text-center px-4 relative z-10">
                 <h2
                     ref={headlineRef}
-                    className="text-3xl md:text-4xl/tight font-bold text-[#002366] mb-3"
+                    className="text-3xl md:text-4xl/tight font-bold text-[#014bac] mb-3"
                 >
                     Be the First to Know When We Launch 🚀
                 </h2>
@@ -114,7 +114,7 @@ const Waitlist = () => {
                     />
                     <button
                         type="submit"
-                        className="bg-gradient-to-r from-blue-400 to-blue-700 px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                        className="bg-gradient-to-r from-[#05d3f7] to-[#014bac] px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition duration-300"
                     >
                         <span role="img" aria-label="Join">👉</span> Join the Waitlist
                     </button>

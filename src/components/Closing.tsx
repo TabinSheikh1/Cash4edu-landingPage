@@ -68,7 +68,7 @@ const Closing = () => {
       <div className="container text-center">
         <h2
           ref={headlineRef}
-          className="text-3xl md:text-4xl font-bold text-[#002366] mb-4"
+          className="text-3xl md:text-4xl font-bold text-[#014bac] mb-4"
         >
           Ready to Start Your Journey?
         </h2>
