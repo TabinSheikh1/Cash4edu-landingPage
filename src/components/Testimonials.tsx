@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const testimonials = [
   {
     name: "Luke Smith",
-    text: "Cash 4 Edu helped me discover scholarships I never knew existed. The app is super easy and fun to",
+    text: "Cash 4 Edu helped me discover scholarships I never knew existed. The app is super easy",
     school: "California State University"
   },
   {
