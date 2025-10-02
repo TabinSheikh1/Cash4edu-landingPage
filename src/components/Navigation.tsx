@@ -5,12 +5,38 @@ import useScrollEvent from "@/hooks/useScrollEvent";
 import Gumshoe from 'gumshoejs'
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
 
 const Navigation = () => {
   const navRef = useRef<HTMLDivElement | null>(null);
+  const linksRef = useRef<HTMLUListElement | null>(null);
 
   useEffect(() => {
-    if (navRef.current) new Gumshoe('.navbar-nav a', { offset: 80 })
+    if (navRef.current) new Gumshoe('.navbar-nav a', { offset: 80 });
+
+    // GSAP animation for navbar entrance
+    if (navRef.current) {
+      gsap.fromTo(
+        navRef.current,
+        { y: -60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.9, ease: "power3.out" }
+      );
+    }
+    // GSAP animation for nav links
+    if (linksRef.current) {
+      gsap.fromTo(
+        linksRef.current.children,
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          stagger: 0.08,
+          delay: 0.3,
+          ease: "power2.out"
+        }
+      );
+    }
   }, []);
 
   const { scrollY } = useScrollEvent()
@@ -19,7 +45,6 @@ const Navigation = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
 
   return (
     <>
@@ -31,7 +56,7 @@ const Navigation = () => {
       >
         <div className="container">
           <div className="flex lg:flex-nowrap flex-wrap items-center">
-            <a href="index-1.html" className="flex items-center">
+            <a href="#home" className="flex items-center">
               {/* <Image
                 src={logo}
                 className="h-9 flex"
@@ -55,10 +80,11 @@ const Navigation = () => {
               </button>
             </div>
             <div
-              className="navigation hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden items-center justify-center lg:flex mx-auto overflow-hidden mt-6 lg:mt-0 nav-light"
+              className={`navigation hs-collapse transition-all duration-300 lg:basis-auto basis-full grow ${isOpen ? "flex" : "hidden"} items-center justify-center lg:flex mx-auto overflow-hidden mt-6 lg:mt-0 nav-light`}
               id="navbarCollapse"
             >
               <ul
+                ref={linksRef}
                 className="navbar-nav flex-col lg:flex-row gap-y-2 flex lg:items-center justify-center"
                 id="navbar-navlist"
               >
@@ -94,8 +120,6 @@ const Navigation = () => {
                     Waitlist
                   </a>
                 </li>
-
-
                 <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
@@ -112,36 +136,8 @@ const Navigation = () => {
                     Closing
                   </a>
                 </li>
-                {/* <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
-                  <a
-                    className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
-                    href="#blog"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
-                  <a
-                    className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
-                    href="#contact"
-                  >
-                    Contact
-                  </a>
-                </li> */}
               </ul>
             </div>
-            {/* <div className="ms-auto shrink hidden lg:inline-flex gap-2">
-              <a
-                href="#"
-                className="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium"
-              >
-                <IconifyIcon
-                  icon="lucide:download-cloud"
-                  className="h-4 w-4 fill-white/40"
-                />
-                <span className="hidden sm:block">Download</span>
-              </a>
-            </div> */}
           </div>
         </div>
       </nav>
