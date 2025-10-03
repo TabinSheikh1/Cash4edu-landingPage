@@ -97,7 +97,7 @@ const Hero = () => {
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#014bac] rounded-full opacity-30 blur-3xl pointer-events-none"></div>
       <div className="container">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 items-center">
-          <div>
+          <div className='mt-14 lg:mt-0'>
             <h1
               ref={headlineRef}
               className="text-3xl md:text-5xl/tight lg:text-6xl/tight text-[#014bac] tracking-normal capitalize leading-normal font-bold max-w-2xl"
