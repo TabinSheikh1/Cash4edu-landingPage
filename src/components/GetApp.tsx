@@ -127,6 +127,7 @@ const GetApp = () => {
 
   return (
     <section
+        id="getapp"
       className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] py-16 lg:py-24"
       ref={sectionRef}
     >

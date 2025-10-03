@@ -126,7 +126,7 @@ const EduAsk = () => {
     <section
       ref={sectionRef}
       className="py-20 bg-[#f8fbff] flex justify-center"
-      id="edu-ask"
+      id="faqs"
     >
       <div className="w-[90vw] max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">

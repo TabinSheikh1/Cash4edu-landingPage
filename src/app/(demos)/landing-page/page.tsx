@@ -23,8 +23,8 @@ const page = () => {
       <Features />
       <Waitlist/>
       {/* <HowItWorks /> */}
-      <Partner />
       <GetApp />
+      <Partner />
       <Faqs />
       <Testimonials />
       <Closing/>

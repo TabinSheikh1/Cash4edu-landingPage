@@ -123,9 +123,33 @@ const Navigation = () => {
                 <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
                   <a
                     className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
+                    href="#getapp"
+                  >
+                    GetApp
+                  </a>
+                </li>
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
+                  <a
+                    className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
                     href="#partner"
                   >
                     Partner
+                  </a>
+                </li>
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
+                  <a
+                    className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
+                    href="#faqs"
+                  >
+                    FAQs
+                  </a>
+                </li>
+                <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
+                  <a
+                    className="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize"
+                    href="#testimonials"
+                  >
+                    Testimonials
                   </a>
                 </li>
                 <li className="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-[#014bac] [&.active]:!text-[#014bac] group-[&.is-sticky]:[&.active]:text-[#014bac]">
