@@ -94,7 +94,7 @@ const Waitlist = () => {
                     ref={headlineRef}
                     className="text-3xl md:text-4xl/tight font-bold text-[#014bac] mb-3"
                 >
-                    Be the First to Know When We Launch 🚀
+                    Be the First to  <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">Know When We Launch </span>🚀 
                 </h2>
                 <p
                     ref={subRef}

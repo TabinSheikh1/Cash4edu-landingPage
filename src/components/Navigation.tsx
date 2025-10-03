@@ -1,5 +1,5 @@
 'use client'
-import logo from "@/assets/images/logo.png";
+import logo from "../../public/images/Logo.png";
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import useScrollEvent from "@/hooks/useScrollEvent";
 import Gumshoe from 'gumshoejs'
@@ -57,14 +57,14 @@ const Navigation = () => {
         <div className="container">
           <div className="flex lg:flex-nowrap flex-wrap items-center">
             <a href="#home" className="flex items-center">
-              {/* <Image
+              <Image
                 src={logo}
-                className="h-9 flex"
+                className="flex"
                 alt="logo"
-                width={118}
-                height={36}
-              /> */}
-              <h2 className="text-2xl font-bold">Cash4edu LOGO</h2>
+                width={100}
+                height={40}
+              />
+              
             </a>
             <div className="lg:hidden flex items-center ms-auto px-2.5">
               <button onClick={toggleMenu}

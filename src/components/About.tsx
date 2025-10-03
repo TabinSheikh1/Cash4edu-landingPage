@@ -102,7 +102,7 @@ const About = () => {
               ref={headlineRef}
               className="text-3xl md:text-4xl/tight font-semibold text-black mt-4"
             >
-              What is Cash 4 Edu?
+              What is <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">Cash 4 Edu?</span> 
             </h1>
             <p className="text-base font-normal text-muted mt-6">
               Cash 4 Edu is a mobile-first app designed to reduce student debt and increase access to education. We connect students to scholarships, grants, tuition benefits, and financial literacy resources in a fun, easy-to-use way

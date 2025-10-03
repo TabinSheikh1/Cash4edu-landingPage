@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import logo from '@/assets/images/logo.png'
+import logo from '../../public/images/Logo.png'
 
 function Footer() {
   return (
@@ -8,18 +8,18 @@ function Footer() {
       <footer className="bg-gradient-to-br from-[#014bac] to-[#17243A]">
         <div className="container mx-auto px-4">
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 py-12">
             {/* Company Info - Full width on mobile, 2 cols on desktop */}
             <div className="lg:col-span-2">
-              <div className="flex items-center mb-6">
-                <div className="flex items-center">
-                  {/* <Image src={logo} alt="Cash4edu" className="h-12 me-4" width={160} height={48}/> */}
-                  <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-[#05d3f7] bg-clip-text text-transparent">
+              <div className="flex items-center ">
+                <div className="flex items-center ">
+                  <Image src={logo} alt="Cash4edu" className="flex" width={110} height={40}/>
+                  {/* <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-[#05d3f7] bg-clip-text text-transparent">
                     Cash4edu
-                  </h2>
+                  </h2> */}
                 </div>
               </div>
-              <p className="text-gray-200 text-lg leading-relaxed mb-6 max-w-md">
+              <p className="text-gray-200 text-md leading-tight mb-6 max-w-md">
                 Empowering students worldwide to achieve their academic dreams through accessible scholarships and educational funding opportunities. Your future starts here.
               </p>
               

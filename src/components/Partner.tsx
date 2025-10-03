@@ -88,26 +88,26 @@ const Partner = () => {
 
   return (
     <section id='partner' className="py-24" ref={sectionRef}>
-      <div className="container">
-        <div className="grid lg:grid-cols-2 items-center gap-6">
-          <div className="flex items-center" ref={imgRef}>
+      <div className="container  w-[95%]">
+        <div className="flex flex-col md:flex-row items-center ">
+          <div className="flex items-center md:w-[55%] lg:w-[35%] " ref={imgRef}>
             <Image
               src={handshakes}
-              className="lg:h-[300px] h-[250px] md:mb-3 md:w-[400px] md:h-[300px] rounded-xl mx-auto drop-shadow-2xl"
+              className="lg:h-[260px] h-[230px] md:h-[295px] rounded-xl mx-auto drop-shadow-2xl"
               alt="partner section"
               width={433}
               height={650}
             />
           </div>
-          <div className="lg:ms-5 ms-8">
-            <span className="text-sm text-[#014bac] uppercase font-semibold tracking-wider text-default-950">
+          <div className="px-2 md:px-8 mt-8 sm:mt-0">
+            <span className="text-sm text-[#014bac] uppercase font-semibold tracking-wider  text-default-950">
               Our Partner
             </span>
             <h2
               ref={headlineRef}
               className="text-3xl md:text-4xl/tight font-semibold text-black mt-2"
             >
-              Partner With Cash 4 Edu
+              Partner With <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">Cash 4 Edu</span> 
             </h2>
             <a
               href="#"
@@ -117,7 +117,7 @@ const Partner = () => {
               <IconifyIcon icon="lucide:move-right" />
             </a>
             <hr className="border-gray-200 mt-3" />
-            <div className='mt-3'>
+            <div className='mt-3 text-black/80 text-base '>
               <p>Employers, brands, and vendors — connect with students directly through education benefits, discounts, and sponsored opportunities.</p>
             </div>
             <button

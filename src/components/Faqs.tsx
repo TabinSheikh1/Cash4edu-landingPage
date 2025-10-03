@@ -132,13 +132,14 @@ const EduAsk = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: FAQ */}
           <div ref={leftRef}>
-            <span className="flex items-center gap-2 text-sm font-medium text-[#05d3f7] mb-2">
+            <span className="flex items-center gap-2 text-sm font-medium text-[#014bac] mb-2">
               <span className="text-xl"><LuShieldQuestion /></span> Ask Question
             </span>
             <h2 className="text-4xl font-extrabold text-[#014bac] mb-4 leading-tight">
-              Innovation Moves<br />You Forward
+              Innovation Moves<br />
+              <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">You Forward</span>
             </h2>
-            <p className="text-[#014bac]/80 mb-8 max-w-lg">
+            <p className="text-black/80 mb-8 max-w-lg">
               Dictum ultrices porttitor amet nec sollicitudin mi molestie adipiscing netus. Lorem at ac ut morbi ullamcorper molestie lacus lorem ipsum dummy text provide happy
             </p>
             <div className="divide-y divide-[#e5eaf1] border-t border-[#e5eaf1]">
@@ -165,7 +166,7 @@ const EduAsk = () => {
                     {faq.q}
                   </button>
                   {open === idx && (
-                    <div className="py-2 pl-12 pr-2 text-[#014bac]/80 text-base">
+                    <div className="py-2 pl-12 pr-2 text-[#black]/80 text-base">
                       {faq.a}
                     </div>
                   )}
@@ -183,14 +184,14 @@ const EduAsk = () => {
                 >
                   <div className="mb-3">{stat.icon}</div>
                   <div className="text-2xl font-bold text-[#014bac]">{stat.value}</div>
-                  <div className="text-[#014bac]/80 text-base">{stat.label}</div>
+                  <div className="text-[#black]/80 text-base">{stat.label}</div>
                 </div>
               ))}
             </div>
             <div className="flex justify-end">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 bg-[#014bac] hover:bg-[#05d3f7] text-white font-semibold px-8 py-3 rounded-2xl shadow transition"
+                className="w-1/2 justify-center inline-flex items-center gap-2 bg-gradient-to-r from-[#014bac] to-[#05d3f7] text-white py-3 rounded-xl font-semibold shadow-lg"
               >
                 Read More
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">

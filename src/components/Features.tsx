@@ -90,7 +90,7 @@ const FeaturesSection = () => {
                 <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-4 tracking-tight">
                     Everything You Need in <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">One App</span>
                 </h2>
-                <p className="text-center text-lg text-gray-500 mb-14 max-w-2xl mx-auto">
+                <p className="text-center text-lg text-gray-700 mb-14 max-w-2xl mx-auto">
                     Unlock your academic journey with smart tools, rewards, and a supportive community.
                 </p>
 

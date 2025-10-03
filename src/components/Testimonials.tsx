@@ -78,7 +78,7 @@ const Testimonials = () => {
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-[#014bac] mb-4 tracking-tight">
           What Students Say
         </h2>
-        <p className="text-center text-lg text-[#014bac]/80 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
           Real stories from students who found success, support, and scholarships with Cash 4 Edu.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
