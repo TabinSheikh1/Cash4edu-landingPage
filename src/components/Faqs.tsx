@@ -125,40 +125,40 @@ const EduAsk = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-[#f8fbff] flex justify-center"
+      className="py-20 bg-[#f8fbff] dark:bg-gray-900 flex justify-center transition-colors duration-300"
       id="faqs"
     >
       <div className="w-[90vw] max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: FAQ */}
           <div ref={leftRef}>
-            <span className="flex items-center gap-2 text-sm font-medium text-[#014bac] mb-2">
+            <span className="flex items-center gap-2 text-sm font-medium text-[#014bac] dark:text-[#05d3f7] mb-2">
               <span className="text-xl"><LuShieldQuestion /></span> Ask Question
             </span>
-            <h2 className="text-4xl font-extrabold text-[#014bac] mb-4 leading-tight">
+            <h2 className="text-4xl font-extrabold text-[#014bac] dark:text-white mb-4 leading-tight">
               Innovation Moves<br />
               <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">You Forward</span>
             </h2>
-            <p className="text-black/80 mb-8 max-w-lg">
+            <p className="text-black/80 dark:text-gray-300 mb-8 max-w-lg">
               Dictum ultrices porttitor amet nec sollicitudin mi molestie adipiscing netus. Lorem at ac ut morbi ullamcorper molestie lacus lorem ipsum dummy text provide happy
             </p>
-            <div className="divide-y divide-[#e5eaf1] border-t border-[#e5eaf1]">
+            <div className="divide-y divide-[#e5eaf1] dark:divide-gray-700 border-t border-[#e5eaf1] dark:border-gray-700">
               {faqs.map((faq, idx) => (
                 <div key={idx}>
                   <button
                     className={`flex items-center w-full py-4 text-lg font-semibold transition-colors ${open === idx
-                      ? "text-[#014bac]"
-                      : "text-[#014bac]/90"
+                      ? "text-[#014bac] dark:text-[#05d3f7]"
+                      : "text-[#014bac]/90 dark:text-gray-300"
                       }`}
                     onClick={() => setOpen(open === idx ? -1 : idx)}
                   >
                     <span className="mr-3">
                       {open === idx ? (
-                        <span className="inline-block text-[#05d3f7] bg-[#eafaff] rounded-full p-1">
+                        <span className="inline-block text-[#05d3f7] bg-[#eafaff] dark:bg-gray-800 rounded-full p-1">
                           <LuChevronUp className="inline-block" />
                         </span>
                       ) : (
-                        <span className="inline-block text-[#05d3f7] bg-[#eafaff] rounded-full p-1">
+                        <span className="inline-block text-[#05d3f7] bg-[#eafaff] dark:bg-gray-800 rounded-full p-1">
                           <LuChevronDown className="inline-block" />
                         </span>
                       )}
@@ -166,7 +166,7 @@ const EduAsk = () => {
                     {faq.q}
                   </button>
                   {open === idx && (
-                    <div className="py-2 pl-12 pr-2 text-[#black]/80 text-base">
+                    <div className="py-2 pl-12 pr-2 text-black/80 dark:text-gray-300 text-base">
                       {faq.a}
                     </div>
                   )}
@@ -180,11 +180,11 @@ const EduAsk = () => {
               {stats.map((stat, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-xl shadow-md flex flex-col items-center justify-center p-6 border border-[#e5eaf1] hover:shadow-lg transition"
+                  className="bg-white dark:bg-gray-800 rounded-xl shadow-md flex flex-col items-center justify-center p-6 border border-[#e5eaf1] dark:border-gray-700 hover:shadow-lg transition"
                 >
                   <div className="mb-3">{stat.icon}</div>
-                  <div className="text-2xl font-bold text-[#014bac]">{stat.value}</div>
-                  <div className="text-[#black]/80 text-base">{stat.label}</div>
+                  <div className="text-2xl font-bold text-[#014bac] dark:text-white">{stat.value}</div>
+                  <div className="text-black/80 dark:text-gray-300 text-base">{stat.label}</div>
                 </div>
               ))}
             </div>

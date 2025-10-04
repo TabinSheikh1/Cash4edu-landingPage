@@ -31,7 +31,6 @@ const GetApp = () => {
         }
       );
     }
-
     if (headlineRef.current) {
       gsap.fromTo(
         headlineRef.current,
@@ -49,7 +48,6 @@ const GetApp = () => {
         }
       );
     }
-
     if (descRef.current) {
       gsap.fromTo(
         descRef.current,
@@ -67,7 +65,6 @@ const GetApp = () => {
         }
       );
     }
-
     if (featuresRef.current) {
       gsap.fromTo(
         featuresRef.current,
@@ -85,7 +82,6 @@ const GetApp = () => {
         }
       );
     }
-
     if (buttonsRef.current) {
       gsap.fromTo(
         buttonsRef.current,
@@ -103,7 +99,6 @@ const GetApp = () => {
         }
       );
     }
-
     if (phoneRef.current) {
       gsap.fromTo(
         phoneRef.current,
@@ -127,9 +122,13 @@ const GetApp = () => {
 
   return (
     <section
-        id="getapp"
-      className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] py-16 lg:py-24"
+      id="getapp"
       ref={sectionRef}
+      className="
+        py-16 lg:py-24 
+        bg-gradient-to-r from-[#014bac] to-[#05d3f7] 
+        dark:from-gray-900 dark:to-black
+      "
     >
       <div className="container mx-auto px-4 w-[90%]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -137,10 +136,10 @@ const GetApp = () => {
           <div className="text-center lg:text-left">
             {/* Logo/Brand */}
             <div className="mb-6" ref={headlineRef}>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white dark:text-[#05d3f7] mb-2">
                 CASH4EDU
               </h2>
-              <p className="text-xl text-white/90 font-light">
+              <p className="text-xl text-white/90 dark:text-gray-300 font-light">
                 FUELING AMBITION, FUNDING EDUCATION
               </p>
             </div>
@@ -148,7 +147,7 @@ const GetApp = () => {
             {/* App Description */}
             <p
               ref={descRef}
-              className="text-lg text-white/80 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0"
+              className="text-lg text-white/80 dark:text-gray-300 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0"
             >
               Access thousands of scholarships, manage your applications, and
               get funded for your education - all in one powerful mobile app.
@@ -159,22 +158,17 @@ const GetApp = () => {
               ref={featuresRef}
               className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 max-w-md mx-auto lg:mx-0"
             >
-              <div className="flex items-center gap-3 text-white">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-sm">Scholarship Matching</span>
-              </div>
-              <div className="flex items-center gap-3 text-white">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-sm">Application Tracker</span>
-              </div>
-              <div className="flex items-center gap-3 text-white">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-sm">Deadline Alerts</span>
-              </div>
-              <div className="flex items-center gap-3 text-white">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-sm">Document Manager</span>
-              </div>
+              {[
+                "Scholarship Matching",
+                "Application Tracker",
+                "Deadline Alerts",
+                "Document Manager",
+              ].map((feature, i) => (
+                <div key={i} className="flex items-center gap-3 text-white dark:text-gray-200">
+                  <div className="w-2 h-2 bg-white dark:bg-[#05d3f7] rounded-full"></div>
+                  <span className="text-sm">{feature}</span>
+                </div>
+              ))}
             </div>
 
             {/* Download Buttons */}
@@ -213,42 +207,40 @@ const GetApp = () => {
           <div className="relative" ref={phoneRef}>
             <div className="relative max-w-md mx-auto">
               {/* Phone Mockup */}
-              <div className="relative bg-gradient-to-b from-[#71777B] to-[#5a5f63] rounded-[40px] p-6 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div className="relative bg-gradient-to-b from-[#71777B] to-[#5a5f63] dark:from-gray-700 dark:to-gray-800 rounded-[40px] p-6 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 {/* Phone Notch */}
-                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-[#71777B] rounded-b-lg z-10"></div>
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-[#71777B] dark:bg-gray-600 rounded-b-lg z-10"></div>
 
                 {/* Screen Content */}
-                <div className="bg-white rounded-[32px] h-96 overflow-hidden relative">
+                <div className="bg-white dark:bg-gray-900 rounded-[32px] h-96 overflow-hidden relative">
                   {/* App Header */}
                   <div className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] p-4 text-white">
                     <h3 className="font-bold text-lg">Cash4Edu</h3>
-                    <p className="text-sm opacity-90">
-                      Your Scholarship Companion
-                    </p>
+                    <p className="text-sm opacity-90">Your Scholarship Companion</p>
                   </div>
 
                   {/* App Content */}
                   <div className="p-4">
                     <div className="space-y-3">
-                      <div className="bg-gradient-to-r from-[#014bac]/10 to-[#05d3f7]/10 p-3 rounded-lg border-l-4 border-[#014bac]">
-                        <p className="font-semibold text-[#014bac]">
+                      <div className="bg-gradient-to-r from-[#014bac]/10 to-[#05d3f7]/10 p-3 rounded-lg border-l-4 border-[#014bac] dark:border-[#05d3f7]">
+                        <p className="font-semibold text-[#014bac] dark:text-[#05d3f7]">
                           15 New Matches
                         </p>
-                        <p className="text-xs text-[#71777B]">
+                        <p className="text-xs text-[#71777B] dark:text-gray-400">
                           Scholarships waiting for you
                         </p>
                       </div>
                       <div className="bg-gradient-to-r from-[#05d3f7]/10 to-[#014bac]/10 p-3 rounded-lg border-l-4 border-[#05d3f7]">
-                        <p className="font-semibold text-[#014bac]">
+                        <p className="font-semibold text-[#014bac] dark:text-[#05d3f7]">
                           3 Applications Due
                         </p>
-                        <p className="text-xs text-[#71777B]">Next 7 days</p>
+                        <p className="text-xs text-[#71777B] dark:text-gray-400">Next 7 days</p>
                       </div>
-                      <div className="bg-[#71777B]/10 p-3 rounded-lg border-l-4 border-[#71777B]">
-                        <p className="font-semibold text-[#014bac]">
+                      <div className="bg-[#71777B]/10 dark:bg-gray-700/30 p-3 rounded-lg border-l-4 border-[#71777B] dark:border-gray-500">
+                        <p className="font-semibold text-[#014bac] dark:text-[#05d3f7]">
                           $25,000+ Available
                         </p>
-                        <p className="text-xs text-[#71777B]">
+                        <p className="text-xs text-[#71777B] dark:text-gray-400">
                           In scholarship funds
                         </p>
                       </div>
@@ -264,12 +256,12 @@ const GetApp = () => {
                 </div>
 
                 {/* Home Indicator */}
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-white/30 rounded-full"></div>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-white/30 dark:bg-gray-600 rounded-full"></div>
               </div>
 
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#05d3f7] rounded-full opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-[#71777B] rounded-full opacity-20 animate-pulse delay-1000"></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-[#71777B] dark:bg-gray-700 rounded-full opacity-20 animate-pulse delay-1000"></div>
             </div>
           </div>
         </div>

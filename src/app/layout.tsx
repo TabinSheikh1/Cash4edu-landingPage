@@ -1,20 +1,17 @@
-import Image from 'next/image'
-
-import '@/assets/scss/style.scss'
-import AppProviders from '../components/wrappers/AppProviders'
-import { Metadata } from 'next'
-
+import Image from "next/image";
+import "@/assets/scss/style.scss";
+import AppProviders from "../components/wrappers/AppProviders";
+import { Metadata } from "next";
+import ThemeProvider from "@/components/ThemeProvider"; // 👈 add this
 
 export const metadata: Metadata = {
   title: {
-    default:
-      'Cash 4 edu - Where Learning Meets Opportunity',
-    template:
-      '%s - Cash 4 edu',
+    default: "Cash 4 edu - Where Learning Meets Opportunity",
+    template: "%s - Cash 4 edu",
   },
   description:
-    'A Fully Responsive Tailwind CSS Template, personal, agency, application, business, clean, creative, it solutions, startup, career, blog, modern, creative, multipurpose, portfolio, saas, software, tailwind css, etc.',
-}
+    "A Fully Responsive Tailwind CSS Template, personal, agency, application, business, clean, creative, it solutions, startup, career, blog, modern, creative, multipurpose, portfolio, saas, software, tailwind css, etc.",
+};
 
 const splashScreenStyles = `
 #splash-screen {
@@ -45,25 +42,26 @@ const splashScreenStyles = `
     visibility: hidden;
   }
 }
-`
+`;
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <style suppressHydrationWarning>{splashScreenStyles}</style>
       </head>
-      <title>Cash 4 edu</title>
-      <body className={`antialiased`}>
-        
+      <body className="antialiased bg-white text-black dark:bg-gray-900 dark:text-white">
         <div id="__next_splash">
-          <AppProviders>{children}</AppProviders>
+          {/* 👇 Wrap with ThemeProvider so toggle works everywhere */}
+          <ThemeProvider>
+            <AppProviders>{children}</AppProviders>
+          </ThemeProvider>
         </div>
       </body>
     </html>
-  )
+  );
 }

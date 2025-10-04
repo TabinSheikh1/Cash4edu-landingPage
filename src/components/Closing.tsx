@@ -23,7 +23,7 @@ const Closing = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 80%",
-          }
+          },
         }
       );
     }
@@ -40,7 +40,7 @@ const Closing = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 75%",
-          }
+          },
         }
       );
     }
@@ -57,24 +57,28 @@ const Closing = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 72%",
-          }
+          },
         }
       );
     }
   }, []);
 
   return (
-    <section id="closing" className="py-20 bg-gradient-to-b from-white to-blue-50" ref={sectionRef}>
+    <section
+      id="closing"
+      ref={sectionRef}
+      className="py-20 bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500"
+    >
       <div className="container text-center">
         <h2
           ref={headlineRef}
-          className="text-3xl md:text-4xl font-bold text-[#014bac] mb-4"
+          className="text-3xl md:text-4xl font-bold text-[#014bac] dark:text-[#05d3f7] mb-4"
         >
           Ready to Start Your Journey?
         </h2>
         <p
           ref={subRef}
-          className="text-lg text-gray-700 mb-7"
+          className="text-lg text-gray-700 dark:text-gray-300 mb-7"
         >
           Join Cash 4 Edu and unlock a world of scholarships, rewards, and opportunities.
         </p>

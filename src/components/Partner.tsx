@@ -87,10 +87,14 @@ const Partner = () => {
   }, []);
 
   return (
-    <section id='partner' className="py-24" ref={sectionRef}>
-      <div className="container  w-[95%]">
+    <section
+      id='partner'
+      className="py-24 bg-white dark:bg-dark transition-colors duration-300"
+      ref={sectionRef}
+    >
+      <div className="container w-[95%]">
         <div className="flex flex-col md:flex-row items-center ">
-          <div className="flex items-center md:w-[55%] lg:w-[35%] " ref={imgRef}>
+          <div className="flex items-center md:w-[55%] lg:w-[35%]" ref={imgRef}>
             <Image
               src={handshakes}
               className="lg:h-[260px] h-[230px] md:h-[295px] rounded-xl mx-auto drop-shadow-2xl"
@@ -100,25 +104,32 @@ const Partner = () => {
             />
           </div>
           <div className="px-2 md:px-8 mt-8 sm:mt-0">
-            <span className="text-sm text-[#014bac] uppercase font-semibold tracking-wider  text-default-950">
+            <span className="text-sm text-[#014bac] uppercase font-semibold tracking-wider">
               Our Partner
             </span>
             <h2
               ref={headlineRef}
-              className="text-3xl md:text-4xl/tight font-semibold text-black mt-2"
+              className="text-3xl md:text-4xl/tight font-semibold text-black dark:text-white mt-2"
             >
-              Partner With <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">Cash 4 Edu</span> 
+              Partner With{" "}
+              <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">
+                Cash 4 Edu
+              </span>
             </h2>
             <a
               href="#"
-              className="inline-flex items-center justify-center gap-3 text-sm font-medium text-black mt-6"
+              className="inline-flex items-center justify-center gap-3 text-sm font-medium text-black dark:text-gray-200 mt-6"
             >
               Learn More
               <IconifyIcon icon="lucide:move-right" />
             </a>
-            <hr className="border-gray-200 mt-3" />
-            <div className='mt-3 text-black/80 text-base '>
-              <p>Employers, brands, and vendors — connect with students directly through education benefits, discounts, and sponsored opportunities.</p>
+            <hr className="border-gray-200 dark:border-gray-700 mt-3" />
+            <div className='mt-3 text-black/80 dark:text-gray-300 text-base'>
+              <p>
+                Employers, brands, and vendors — connect with students directly
+                through education benefits, discounts, and sponsored
+                opportunities.
+              </p>
             </div>
             <button
               ref={btnRef}
@@ -133,4 +144,4 @@ const Partner = () => {
   )
 }
 
-export default Partner
+export default Partner;

@@ -1,15 +1,15 @@
-// import type { Config } from "tailwindcss";
+// tailwind.config.ts
+import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}", 
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    'node_modules/preline/dist/*.js',
-
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", 
+    "node_modules/preline/dist/*.js",
   ],
-  darkMode: ["class"],
+  darkMode: "class", // 👈 keep only "class"
   important: true,
   theme: {
     container: {
@@ -20,14 +20,12 @@ export default {
         md: "1rem",
         lg: "1rem",
         xl: "3rem",
-        '2xl': '8rem',
+        "2xl": "8rem",
       },
     },
-
     fontFamily: {
       dm: ['"DM Sans", sans-serif'],
     },
-
     extend: {
       colors: {
         primary: "#5d87ff",
@@ -38,19 +36,16 @@ export default {
         black: "#000000",
         muted: "#707070",
       },
-
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        }
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
       },
-
       spacing: {
         0.75: "0.1875rem",
         3.25: "0.8125rem",
       },
-
       zIndex: {
         1: "1",
         2: "2",
@@ -60,7 +55,9 @@ export default {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('preline/plugin')
+    require("@tailwindcss/forms"),
+    require("preline/plugin"),
   ],
-}
+};
+
+export default config;

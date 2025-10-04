@@ -67,20 +67,22 @@ const Testimonials = () => {
 
   return (
     <section
-      className="py-24 bg-gradient-to-b from-[#05d3f7]/10 to-white relative overflow-hidden flex justify-center"
+      className="py-24 bg-gradient-to-b from-[#05d3f7]/10 to-white dark:from-[#014bac]/20 dark:to-gray-900 relative overflow-hidden flex justify-center"
       id="testimonials"
       ref={sectionRef}
     >
       {/* Decorative Blobs */}
       <div className="absolute -top-24 -left-24 w-72 h-72 bg-[#014bac] opacity-20 rounded-full blur-2xl pointer-events-none"></div>
       <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-[#014bac] opacity-20 rounded-full blur-2xl pointer-events-none"></div>
+      
       <div className="w-[90vw] max-w-6xl mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-[#014bac] mb-4 tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-[#014bac] dark:text-[#05d3f7] mb-4 tracking-tight">
           What Students Say
         </h2>
-        <p className="text-center text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-lg text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
           Real stories from students who found success, support, and scholarships with Cash 4 Edu.
         </p>
+
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <div
@@ -88,7 +90,7 @@ const Testimonials = () => {
               ref={(el: HTMLDivElement | null) => {
                 cardRefs.current[i] = el;
               }}
-              className="relative bg-white rounded-2xl shadow-xl p-8 border-t-4 border-[#05d3f7] flex flex-col items-center group hover:scale-[1.03] hover:shadow-2xl transition-transform duration-300"
+              className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 border-t-4 border-[#05d3f7] flex flex-col items-center group hover:scale-[1.03] hover:shadow-2xl transition-transform duration-300"
             >
               <svg
                 className="absolute -top-6 left-1/2 -translate-x-1/2 text-[#05d3f7] opacity-30"
@@ -99,9 +101,9 @@ const Testimonials = () => {
               >
                 <text x="0" y="38" fontSize="48" fontFamily="Arial" fill="#05d3f7" opacity="0.3">“</text>
               </svg>
-              <p className="text-lg text-gray-700 mb-6 text-center">&ldquo;{t.text}&rdquo;</p>
-              <div className="font-semibold text-[#014bac] text-lg">{t.name}</div>
-              <div className="text-sm text-gray-500">{t.school}</div>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 text-center">&ldquo;{t.text}&rdquo;</p>
+              <div className="font-semibold text-[#014bac] dark:text-[#05d3f7] text-lg">{t.name}</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400">{t.school}</div>
             </div>
           ))}
         </div>
