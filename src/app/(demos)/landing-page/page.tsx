@@ -16,7 +16,7 @@ import Faqs from "@/components/Faqs";
 
 const page = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navigation/>
       <Hero/>
       <About />
@@ -29,7 +29,7 @@ const page = () => {
       <Testimonials />
       <Closing/>
       <Footer />
-    </>
+    </div>
   );
 };
 

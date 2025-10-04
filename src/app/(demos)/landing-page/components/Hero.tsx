@@ -34,7 +34,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative pt-32 pb-20 bg-gray-200/40 dark:bg-gray-900 bg-[url(../images/home/bg-3.png)] bg-no-repeat bg-cover overflow-hidden"
+      className=" relative pt-32 pb-20 bg-gray-200/40 dark:bg-gray-900 bg-[url(../images/home/bg-3.png)] bg-no-repeat bg-cover overflow-hidden"
       id="home"
       ref={sectionRef}
     >
