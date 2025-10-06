@@ -76,7 +76,7 @@ const About = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="py-24 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 transition-colors duration-500"
+      className="py-24 border-2 border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 transition-colors duration-500 "
     >
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center gap-6">
