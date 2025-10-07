@@ -9,58 +9,84 @@ gsap.registerPlugin(ScrollTrigger);
 const faqs = [
   {
     q: "What services do you offer?",
-    a: "We offer a wide range of digital services, including website design and development, e-commerce solutions, search engine optimization, social media management, pay-per-click advertising, brand identity."
+    a: "We offer a wide range of digital services, including website design and development, e-commerce solutions, search engine optimization, social media management, pay-per-click advertising, brand identity.",
   },
   {
     q: "How long does it take for you to complete a project?",
-    a: "Project timelines vary based on scope, but we always strive for timely delivery and clear communication."
+    a: "Project timelines vary based on scope, but we always strive for timely delivery and clear communication.",
   },
   {
     q: "How much does it cost to work with your agency?",
-    a: "Our pricing is flexible and tailored to your needs. Contact us for a custom quote."
-  }
+    a: "Our pricing is flexible and tailored to your needs. Contact us for a custom quote.",
+  },
 ];
 
 const stats = [
   {
     icon: (
-      <svg className="w-8 h-8 text-[#014bac]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg
+        className="w-8 h-8 text-[#014bac] transition-all duration-500 group-hover:text-[#05d3f7] group-hover:rotate-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <rect x="3" y="3" width="18" height="18" rx="4" strokeWidth={2} />
-        <path d="M7 7h.01M7 11h.01M7 15h.01M11 7h2M11 11h2M11 15h2M15 7h2M15 11h2M15 15h2" strokeWidth={2} />
+        <path
+          d="M7 7h.01M7 11h.01M7 15h.01M11 7h2M11 11h2M11 15h2M15 7h2M15 11h2M15 15h2"
+          strokeWidth={2}
+        />
       </svg>
     ),
     value: "200+",
-    label: "Team member"
+    label: "Team member",
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-[#05d3f7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg
+        className="w-8 h-8 text-[#05d3f7] transition-all duration-500 group-hover:text-[#014bac] group-hover:rotate-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <rect x="3" y="3" width="18" height="18" rx="4" strokeWidth={2} />
         <path d="M7 17V7M12 17V12M17 17V9" strokeWidth={2} />
       </svg>
     ),
     value: "10k+",
-    label: "Complete project"
+    label: "Complete project",
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-[#05d3f7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" strokeWidth={2} />
+      <svg
+        className="w-8 h-8 text-[#05d3f7] transition-all duration-500 group-hover:text-[#014bac] group-hover:-rotate-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+          strokeWidth={2}
+        />
       </svg>
     ),
     value: "20+",
-    label: "Winning award"
+    label: "Winning award",
   },
   {
     icon: (
-      <svg className="w-8 h-8 text-[#014bac]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg
+        className="w-8 h-8 text-[#014bac] transition-all duration-500 group-hover:text-[#05d3f7] group-hover:-rotate-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <rect x="3" y="4" width="18" height="16" rx="2" strokeWidth={2} />
         <path d="M8 8h8M8 12h4" strokeWidth={2} />
       </svg>
     ),
     value: "900+",
-    label: "Student Review"
-  }
+    label: "Student Review",
+  },
 ];
 
 const EduAsk = () => {
@@ -82,7 +108,7 @@ const EduAsk = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 85%",
-          }
+          },
         }
       );
     }
@@ -99,7 +125,7 @@ const EduAsk = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 80%",
-          }
+          },
         }
       );
     }
@@ -116,7 +142,7 @@ const EduAsk = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 80%",
-          }
+          },
         }
       );
     }
@@ -133,23 +159,32 @@ const EduAsk = () => {
           {/* Left: FAQ */}
           <div ref={leftRef}>
             <span className="flex items-center gap-2 text-sm font-medium text-[#014bac] dark:text-[#05d3f7] mb-2">
-              <span className="text-xl"><LuShieldQuestion /></span> Ask Question
+              <span className="text-xl">
+                <LuShieldQuestion />
+              </span>{" "}
+              Ask Question
             </span>
             <h2 className="text-4xl font-extrabold text-[#014bac] dark:text-white mb-4 leading-tight">
-              Innovation Moves<br />
-              <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">You Forward</span>
+              Innovation Moves
+              <br />
+              <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">
+                You Forward
+              </span>
             </h2>
             <p className="text-black/80 dark:text-gray-300 mb-8 max-w-lg">
-              Dictum ultrices porttitor amet nec sollicitudin mi molestie adipiscing netus. Lorem at ac ut morbi ullamcorper molestie lacus lorem ipsum dummy text provide happy
+              Dictum ultrices porttitor amet nec sollicitudin mi molestie
+              adipiscing netus. Lorem at ac ut morbi ullamcorper molestie lacus
+              lorem ipsum dummy text provide happy
             </p>
             <div className="divide-y divide-[#e5eaf1] dark:divide-gray-700 border-t border-[#e5eaf1] dark:border-gray-700">
               {faqs.map((faq, idx) => (
                 <div key={idx}>
                   <button
-                    className={`flex items-center w-full py-4 text-lg font-semibold transition-colors ${open === idx
-                      ? "text-[#014bac] dark:text-[#05d3f7]"
-                      : "text-[#014bac]/90 dark:text-gray-300"
-                      }`}
+                    className={`flex items-center w-full py-4 text-lg font-semibold transition-colors ${
+                      open === idx
+                        ? "text-[#014bac] dark:text-[#05d3f7]"
+                        : "text-[#014bac]/90 dark:text-gray-300"
+                    }`}
                     onClick={() => setOpen(open === idx ? -1 : idx)}
                   >
                     <span className="mr-3">
@@ -176,20 +211,25 @@ const EduAsk = () => {
           </div>
           {/* Right: Stats */}
           <div ref={rightRef}>
-            <div className="grid grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto text-center">
               {stats.map((stat, i) => (
                 <div
                   key={i}
-                  className="bg-white dark:bg-gray-800 rounded-xl shadow-md flex flex-col items-center justify-center p-6 border border-[#e5eaf1] dark:border-gray-700 hover:shadow-lg transition"
+                  className="group bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#05d3f7]/30 dark:hover:shadow-[#014bac]/40"
                 >
-                  <div className="mb-3">{stat.icon}</div>
-                  <div className="text-2xl font-bold text-[#014bac] dark:text-white">{stat.value}</div>
-                  <div className="text-black/80 dark:text-gray-300 text-base">{stat.label}</div>
+                  <div className="flex justify-center mb-3">{stat.icon}</div>
+                  <h3 className="text-2xl font-bold text-[#014bac] dark:text-[#05d3f7] transition-colors duration-300 group-hover:text-[#05d3f7] dark:group-hover:text-[#014bac]">
+                    {stat.value}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm transition-colors duration-300 group-hover:text-[#014bac] dark:group-hover:text-[#05d3f7]">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>
+
             <div className="flex justify-end">
-              <a
+              {/* <a
                 href="#"
                 className="w-1/2 justify-center inline-flex items-center gap-2 bg-gradient-to-r from-[#014bac] to-[#05d3f7] text-white py-3 rounded-xl font-semibold shadow-lg"
               >
@@ -197,7 +237,7 @@ const EduAsk = () => {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
