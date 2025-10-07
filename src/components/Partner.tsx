@@ -1,5 +1,4 @@
 "use client";
-import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -13,7 +12,6 @@ const Partner = () => {
   const imgRef = useRef<HTMLDivElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const btnRef = useRef<HTMLButtonElement>(null);
-
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
@@ -35,7 +33,6 @@ const Partner = () => {
     }
 
     if (imgRef.current) {
-      // Floating subtle animation
       gsap.to(imgRef.current, {
         y: -10,
         repeat: -1,
@@ -43,7 +40,6 @@ const Partner = () => {
         duration: 3,
         ease: "power1.inOut",
       });
-
       gsap.fromTo(
         imgRef.current,
         { opacity: 0, x: -60, scale: 0.95 },
@@ -97,6 +93,37 @@ const Partner = () => {
       );
     }
   }, []);
+
+  // 🚀 FORM SUBMIT HANDLER
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const name = (form[0] as HTMLInputElement).value;
+    const business = (form[1] as HTMLInputElement).value;
+    const email = (form[2] as HTMLInputElement).value;
+    const phone = (form[3] as HTMLInputElement).value;
+
+    try {
+      const res = await fetch("/api/partners", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, business, email, phone }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        alert("✅ Thank you! We'll contact you soon.");
+        form.reset();
+        setShowForm(false);
+      } else {
+        alert("❌ " + data.message);
+      }
+    } catch (error) {
+      alert("⚠️ Something went wrong. Try again later.");
+    }
+  };
 
   return (
     <section
@@ -163,25 +190,30 @@ const Partner = () => {
                 Partner Interest Form
               </h3>
 
-              <form className="grid gap-4">
+              {/* 👇 Form with submit handler */}
+              <form className="grid gap-4" onSubmit={handleSubmit}>
                 <input
                   type="text"
                   placeholder="Full Name"
+                  required
                   className="border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 dark:bg-gray-800 dark:text-white"
                 />
                 <input
                   type="text"
                   placeholder="Business Name"
+                  required
                   className="border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 dark:bg-gray-800 dark:text-white"
                 />
                 <input
                   type="email"
                   placeholder="Email"
+                  required
                   className="border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 dark:bg-gray-800 dark:text-white"
                 />
                 <input
                   type="tel"
                   placeholder="Phone Number"
+                  required
                   className="border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 dark:bg-gray-800 dark:text-white"
                 />
 

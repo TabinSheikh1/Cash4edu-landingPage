@@ -110,8 +110,8 @@ const HowItWorks = () => {
           ref={headlineRef}
           className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mt-3"
         >
-          Your Path to Scholarships & <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">
-                Rewards
+          Your Path to Scholarships  <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">
+                & Rewards
               </span> 
         </h2>
 

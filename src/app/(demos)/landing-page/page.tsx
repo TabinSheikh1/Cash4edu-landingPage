@@ -20,8 +20,8 @@ const page = () => {
     <div className="overflow-hidden">
       <Navigation/>
       <Hero/>
-      <HowItWork/>
       <About />
+      <HowItWork/>
       <Features />
       <SocialProof/>
       <Waitlist/>
