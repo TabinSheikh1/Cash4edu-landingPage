@@ -7,21 +7,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 const testimonials = [
   {
-    name: "Luke Smith",
-    text: "Cash 4 Edu helped me discover scholarships I never knew existed. The app is super easy",
-    school: "California State University"
+    name: "Our Mission",
+    text: "Connecting students with opportunities that make education possible.",
+    school: "Empowering access for every learner."
   },
+{
+  name: "Our Vision",
+  text: "Making scholarships truly simple, transparent, and deeply rewarding for all.",
+  school: "Creating equal chances to achieve dreams."
+},
   {
-    name: "David Johnson",
-    text: "I love the rewards and the financial tips. It made my scholarship journey stress-free.",
-    school: "Teacher, XYZ Academy"
-  },
-  {
-    name: "Sara Malik",
-    text: "The waitlist was worth it! I got early access and found a grant within a week.",
-    school: "Florida State University"
-  }
+  name: "Our Promise",
+  text: "Breaking barriers so dedicated students can reach their fullest potential.",
+  school: "Supporting success through every step."
+}
 ];
+
+
+
 
 const Testimonials = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

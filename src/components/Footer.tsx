@@ -30,15 +30,15 @@ function Footer() {
                   </div>
                   <span className="font-medium">Info@cash4edu.com</span>
                 </a>
-                <a className="flex items-center gap-4 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300 group" href="tel:773-777-1234">
-                  <div className="p-2 bg-[#014bac] dark:bg-gray-800 rounded-lg group-hover:bg-[#05d3f7] dark:group-hover:bg-[#05d3f7] transition-all duration-300">
+                {/* <a className="flex items-center gap-4 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300 group" href="tel:773-777-1234">
+                  <div className="p-2 bg-[#014bac] dark:bg-gray-800 rounded-lg group-hover:bg-[#05d3f7] dark:group-hover:bg-[#05d3f7] transition-all duration-300"> */}
                     {/* phone icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                     </svg>
                   </div>
                   <span className="font-medium">773-777-1234</span>
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -46,11 +46,11 @@ function Footer() {
             <div className="lg:col-span-1">
               <h4 className="font-bold text-white dark:text-gray-100 text-lg mb-6 pb-2 border-b-2 border-[#05d3f7] inline-block">Company</h4>
               <div className="space-y-4">
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">About Our Mission</a></p>
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Scholarship Programs</a></p>
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Join Waitlist</a></p>
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Partner With Us</a></p>
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Contact Support</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#about">About Our Mission</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#features">Scholarship Programs</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#waitlist">Join Waitlist</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#partner">Partner With Us</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#partner">Contact Support</a></p>
               </div>
             </div>
 
@@ -58,19 +58,19 @@ function Footer() {
             <div className="lg:col-span-1">
               <h4 className="font-bold text-white dark:text-gray-100 text-lg mb-6 pb-2 border-b-2 border-[#05d3f7] inline-block">Resources</h4>
               <div className="space-y-4">
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Scholarship Guide</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#about">Scholarship Guide</a></p>
                 <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Application Tips</a></p>
                 <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Financial Aid</a></p>
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Student Stories</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#testimonials">Student Stories</a></p>
               </div>
-            </div>
+            </div>  
 
             {/* Support */}
             <div className="lg:col-span-1">
               <h4 className="font-bold text-white dark:text-gray-100 text-lg mb-6 pb-2 border-b-2 border-[#05d3f7] inline-block">Support</h4>
               <div className="space-y-4">
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Help Center</a></p>
-                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">FAQ</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#faqs">Help Center</a></p>
+                <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#faqs">FAQ</a></p>
                 <p><a className="flex items-center gap-2 text-gray-200 dark:text-gray-400 hover:text-[#05d3f7] dark:hover:text-[#05d3f7] transition-all duration-300" href="#">Live Chat</a></p>
               </div>
             </div>

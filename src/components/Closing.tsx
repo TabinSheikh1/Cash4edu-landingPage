@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,14 +75,30 @@ const Closing = () => {
           ref={headlineRef}
           className="text-3xl md:text-4xl font-bold text-[#014bac] dark:text-[#05d3f7] mb-4"
         >
-          Ready to Start Your Journey?
+          Start Funding Your Future Today
         </h2>
         <p
           ref={subRef}
           className="text-lg text-gray-700 dark:text-gray-300 mb-7"
         >
-          Join Cash 4 Edu and unlock a world of scholarships, rewards, and opportunities.
+          Be among the first to access scholarships, rewards, and financial tools with Cash 4 Edu.
         </p>
+
+        <div className="flex justify-center gap-4">
+      {/* <a
+        href="/contact"
+        className="px-6 py-3 bg-[#014bac] text-white font-medium rounded-xl shadow hover:bg-[#013b8a] transition duration-300"
+      >
+        Contact Us
+      </a> */}
+
+      <Link
+                href="#waitlist"
+                className="bg-gradient-to-r from-[#05d3f7] to-[#014bac] px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300"
+              >
+                Join the Waitlist
+              </Link>
+    </div>
       </div>
     </section>
   );

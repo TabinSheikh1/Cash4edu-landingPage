@@ -9,8 +9,9 @@ import Waitlist from "@/components/Waitlist";
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
 import Testimonials from "@/components/Testimonials";
-
+import HowItWork from "@/components/Howitwork";
 import Faqs from "@/components/Faqs";
+import SocialProof from "@/components/Social";
 
 
 
@@ -19,11 +20,11 @@ const page = () => {
     <div className="overflow-hidden">
       <Navigation/>
       <Hero/>
-      
+      <HowItWork/>
       <About />
       <Features />
+      <SocialProof/>
       <Waitlist/>
-      {/* <HowItWorks /> */}
       <GetApp />
       <Partner />
       <Faqs />
