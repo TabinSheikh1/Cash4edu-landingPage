@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -10,6 +10,7 @@ const Waitlist = () => {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const subRef = useRef<HTMLParagraphElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     if (sectionRef.current) {
@@ -81,6 +82,31 @@ const Waitlist = () => {
     }
   }, []);
 
+  // 🧠 Waitlist Submit Function
+  const handleWaitlistSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        alert("🎉 Welcome email sent! Check your inbox.");
+        setEmail("");
+      } else {
+        alert("❌ " + data.message);
+      }
+    } catch (err) {
+      console.error(err);
+      alert("⚠️ Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <section
       id="waitlist"
@@ -101,7 +127,7 @@ const Waitlist = () => {
         >
           Be the First to Know{" "}
           <span className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] bg-clip-text text-transparent">
-             When We Launch
+            When We Launch
           </span>{" "}
           🚀
         </h2>
@@ -116,12 +142,15 @@ const Waitlist = () => {
 
         <form
           ref={formRef}
+          onSubmit={handleWaitlistSubmit}
           className="flex flex-col sm:flex-row items-center gap-3 justify-center mb-2"
         >
           <input
             type="email"
             required
             placeholder="Enter your email…"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full sm:w-auto flex-1 px-4 py-3 rounded-md 
             border border-gray-300 dark:border-gray-600 
             bg-white dark:bg-gray-800 
@@ -131,9 +160,7 @@ const Waitlist = () => {
           />
           <button
             type="submit"
-            className="bg-gradient-to-r from-[#05d3f7] to-[#014bac] 
-            px-6 py-3 text-white font-semibold rounded-lg shadow-md 
-            hover:shadow-lg transition duration-300"
+            className="bg-gradient-to-r from-[#05d3f7] to-[#014bac] px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300 my-4 sm:my-0"
           >
             <span role="img" aria-label="Join">
               👉
@@ -142,7 +169,7 @@ const Waitlist = () => {
           </button>
         </form>
 
-        <p className="text-sm text-gray-500 dark:text-gray-400">
+        <p className="text-sm text-gray-500 dark:text-gray-400 md:mt-6">
           No spam. Just early access to perks & scholarships.
         </p>
       </div>

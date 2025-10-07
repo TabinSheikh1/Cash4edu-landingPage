@@ -9,28 +9,28 @@ const features = [
   {
     icon: "🎓",
     title: "Scholarship Finder",
-    description: "AI-powered matching that helps you find scholarships you actually qualify for.",
+    description: "Find opportunities tailored to your profile without wasting hours searching.",
     color:
       "from-blue-100 to-blue-300 text-[#05d3f7] dark:from-blue-900 dark:to-blue-700 dark:text-blue-300",
   },
   {
     icon: "📹",
-    title: "Financial Literacy Video Hub",
-    description: "Short, TikTok-style videos that make money skills fun.",
+    title: "Deadline Tracker",
+    description: "Stay on top of every application with built-in reminders.",
     color:
       "from-pink-100 to-pink-300 text-pink-700 dark:from-pink-900 dark:to-pink-700 dark:text-pink-300",
   },
   {
     icon: "💰",
     title: "Rewards Wallet",
-    description: "Earn tokens for engaging and redeem them for perks.",
+    description: "Earn cash bonuses and gift cards as you progress and refer friends.",
     color:
       "from-green-100 to-green-300 text-green-700 dark:from-green-900 dark:to-green-700 dark:text-green-300",
   },
   {
     icon: "🤝",
-    title: "Referral Program",
-    description: "Invite friends and get rewarded.",
+    title: "Financial Skills Hub",
+    description: "Learn essential money management skills with quick, practical video lessons.",
     color:
       "from-yellow-100 to-yellow-300 text-yellow-700 dark:from-yellow-900 dark:to-yellow-700 dark:text-yellow-300",
   },

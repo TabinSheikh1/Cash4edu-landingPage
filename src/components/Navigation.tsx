@@ -10,7 +10,7 @@ import gsap from "gsap";
 const Navigation = () => {
   const navRef = useRef<HTMLDivElement | null>(null);
   const linksRef = useRef<HTMLUListElement | null>(null);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     if (navRef.current) new Gumshoe('.navbar-nav a', { offset: 80 });
@@ -40,7 +40,7 @@ const Navigation = () => {
     }
 
     // Check initial theme
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
   }, []);

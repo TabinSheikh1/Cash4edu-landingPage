@@ -9,7 +9,7 @@ import Waitlist from "@/components/Waitlist";
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
 import Testimonials from "@/components/Testimonials";
-import HowItWorks from "@/components/HowItWorks";
+
 import Faqs from "@/components/Faqs";
 
 
@@ -19,6 +19,7 @@ const page = () => {
     <div className="overflow-hidden">
       <Navigation/>
       <Hero/>
+      
       <About />
       <Features />
       <Waitlist/>

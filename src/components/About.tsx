@@ -131,7 +131,7 @@ const About = () => {
                     <IconifyIcon icon="lucide:rocket" className="h-8 w-8 text-black dark:text-white" />
                   </div>
                 </div>
-                <h1 className="text-xl font-semibold pt-6 text-gray-900 dark:text-white">3. Start</h1>
+                <h1 className="text-xl font-semibold pt-6 text-gray-900 dark:text-white">3. Apply</h1>
                 <p className="text-base text-gray-600 dark:text-gray-400 font-normal mt-2">
                   Explore scholarships, grants, and tools to reduce student debt.
                 </p>

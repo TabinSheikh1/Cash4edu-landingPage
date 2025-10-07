@@ -248,7 +248,7 @@ const GetApp = () => {
 
                     {/* CTA Button */}
                     <div className="absolute bottom-4 left-4 right-4">
-                      <button className="w-full bg-gradient-to-r from-[#014bac] to-[#05d3f7] text-white py-3 rounded-xl font-semibold shadow-lg">
+                      <button className="w-full bg-gradient-to-r from-[#014bac] to-[#05d3f7] text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-lg hover:scale-105 transition duration-300">
                         Explore Scholarships
                       </button>
                     </div>

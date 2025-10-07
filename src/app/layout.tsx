@@ -2,7 +2,7 @@ import Image from "next/image";
 import "@/assets/scss/style.scss";
 import AppProviders from "../components/wrappers/AppProviders";
 import { Metadata } from "next";
-import ThemeProvider from "@/components/ThemeProvider"; // 👈 add this
+import ThemeProvider from "@/components/ThemeProvider"; // 👈 keeps toggle support
 
 export const metadata: Metadata = {
   title: {
@@ -52,11 +52,29 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* 👇 Ensures dark mode applies before hydration to prevent light flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme') || 'dark';
+                  if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
         <style suppressHydrationWarning>{splashScreenStyles}</style>
       </head>
+
       <body className="antialiased bg-white text-black dark:bg-gray-900 dark:text-white">
         <div id="__next_splash">
-          {/* 👇 Wrap with ThemeProvider so toggle works everywhere */}
+          {/* 👇 Wrap with ThemeProvider so toggle works globally */}
           <ThemeProvider>
             <AppProviders>{children}</AppProviders>
           </ThemeProvider>
