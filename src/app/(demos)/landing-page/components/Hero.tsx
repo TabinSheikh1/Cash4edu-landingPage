@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import iterior from "@/assets/images/interior.png";
 import bg3 from "@/assets/images/home/bg-3.png";
 import Link from "next/link";
+import mockup from "../../../../../public/images/mackup.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -111,7 +112,7 @@ const Hero = () => {
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#014bac] rounded-full opacity-30 blur-3xl pointer-events-none z-[2]"></div>
 
       <div className="relative container z-[3]">
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 items-center">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 items-center ">
           {/* Left text section */}
           <div className="mt-14 lg:mt-0">
             <h1
@@ -170,8 +171,8 @@ const Hero = () => {
           {/* Right image section */}
           <div className="relative flex justify-center" ref={imgRef}>
             <Image
-              src={iterior}
-              className="md:h-[700px] lg:ms-auto mx-auto drop-shadow-2xl rounded-3xl border-white dark:border-gray-700"
+              src={mockup}
+              className="md:h-[550px] lg:ms-auto mx-auto drop-shadow-2xl rounded-3xl border-white dark:border-gray-700"
               alt="Education Illustration"
               priority
             />
