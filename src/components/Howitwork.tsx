@@ -122,7 +122,8 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center text-center px-6 py-8 rounded-2xl border transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl dark:hover:shadow-lg ${step.bg} ${step.border} ${step.hover}`}
+              className={`flex flex-col items-center text-center px-6 py-8 rounded-2xl border transition-shadow duration-300 hover:shadow-xl dark:hover:shadow-lg ${step.bg} ${step.border} ${step.hover}`}
+
             >
               <div
                 className={`flex items-center justify-center ${step.bg} rounded-full h-20 w-20 border ${step.border}`}

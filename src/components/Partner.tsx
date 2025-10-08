@@ -33,13 +33,6 @@ const Partner = () => {
     }
 
     if (imgRef.current) {
-      gsap.to(imgRef.current, {
-        y: -10,
-        repeat: -1,
-        yoyo: true,
-        duration: 3,
-        ease: "power1.inOut",
-      });
       gsap.fromTo(
         imgRef.current,
         { opacity: 0, x: -60, scale: 0.95 },
@@ -94,7 +87,6 @@ const Partner = () => {
     }
   }, []);
 
-  // 🚀 FORM SUBMIT HANDLER
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -131,8 +123,9 @@ const Partner = () => {
       className="py-24 bg-white dark:bg-dark transition-colors duration-300"
       ref={sectionRef}
     >
-      <div className="container w-[95%]">
+      <div className="container w-[95%] mx-auto">
         <div className="flex flex-col md:flex-row items-center">
+          {/* Image (no hover/animation) */}
           <div className="flex items-center md:w-[55%] lg:w-[35%]" ref={imgRef}>
             <Image
               src={handshakes}
@@ -143,6 +136,7 @@ const Partner = () => {
             />
           </div>
 
+          {/* Content */}
           <div className="px-2 md:px-8 mt-8 sm:mt-0">
             <span className="text-sm text-[#014bac] uppercase font-semibold tracking-wider dark:text-[#05d3f7]">
               Our Partners
@@ -158,13 +152,15 @@ const Partner = () => {
               </span>
             </h2>
 
-            <p className="mt-5 text-black/80 dark:text-gray-300 text-base max-w-lg">
+            {/* Adjusted width to align better with heading */}
+            <p className="mt-5 text-black/80 dark:text-gray-300 text-base">
               Showcase your scholarships directly to motivated students who are
               ready to apply. Increase visibility for your organization while
               making a real impact in education. Join our partner network and
               help students reduce their financial burden.
             </p>
 
+            {/* Main CTA */}
             <button
               ref={btnRef}
               onClick={() => setShowForm(true)}
@@ -172,6 +168,15 @@ const Partner = () => {
             >
               Become a Partner
             </button>
+
+            {/* Optional CTA — hidden for now */}
+            {/*
+            <button
+              className="mt-3 ml-4 px-5 py-2 border border-[#014bac] text-[#014bac] dark:text-[#05d3f7] rounded-lg text-sm font-medium hover:bg-[#014bac] hover:text-white transition"
+            >
+              Apply to be a Vendor
+            </button>
+            */}
           </div>
         </div>
 
@@ -190,7 +195,6 @@ const Partner = () => {
                 Partner Interest Form
               </h3>
 
-              {/* 👇 Form with submit handler */}
               <form className="grid gap-4" onSubmit={handleSubmit}>
                 <input
                   type="text"

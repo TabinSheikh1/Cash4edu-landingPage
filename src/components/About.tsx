@@ -181,7 +181,7 @@ const About = () => {
           <div className="flex items-center relative" ref={imgRef}>
             <Image
               src={study}
-              className="lg:h-[500px] lg:w-[500px] md:w-[600px] md:h-[500px] h-[300px] w-[330px] rounded-xl mx-auto drop-shadow-2xl border border-gray-200 dark:border-gray-700 transition-transform duration-700 hover:scale-105 hover:rotate-1"
+              className="lg:h-[500px] lg:w-[500px] md:w-[600px] md:h-[500px] h-[300px] w-[330px] rounded-xl mx-auto drop-shadow-2xl border border-gray-200 dark:border-gray-700 transition-transform duration-700"
               alt="study"
               width={538}
               height={200}

@@ -164,11 +164,22 @@ const GetApp = () => {
                 "Deadline Alerts",
                 "Document Manager",
               ].map((feature, i) => (
-                <div key={i} className="flex items-center gap-3 text-white dark:text-gray-200">
+                <div
+                  key={i}
+                  className="flex items-center gap-3 text-white dark:text-gray-200"
+                >
                   <div className="w-2 h-2 bg-white dark:bg-[#05d3f7] rounded-full"></div>
                   <span className="text-sm">{feature}</span>
                 </div>
               ))}
+            </div>
+            {/* Coming Soon Message */}
+            <div className="text-center lg:text-left ">
+              <p>
+              <span className="block text-white dark:text-[#05d3f7] font-semibold mt-1">
+                  Coming soon to iOS & Android 
+                </span>
+              </p>
             </div>
 
             {/* Download Buttons */}
@@ -216,7 +227,9 @@ const GetApp = () => {
                   {/* App Header */}
                   <div className="bg-gradient-to-r from-[#014bac] to-[#05d3f7] p-4 text-white">
                     <h3 className="font-bold text-lg">Cash4Edu</h3>
-                    <p className="text-sm opacity-90">Your Scholarship Companion</p>
+                    <p className="text-sm opacity-90">
+                      Your Scholarship Companion
+                    </p>
                   </div>
 
                   {/* App Content */}
@@ -234,7 +247,9 @@ const GetApp = () => {
                         <p className="font-semibold text-[#014bac] dark:text-[#05d3f7]">
                           3 Applications Due
                         </p>
-                        <p className="text-xs text-[#71777B] dark:text-gray-400">Next 7 days</p>
+                        <p className="text-xs text-[#71777B] dark:text-gray-400">
+                          Next 7 days
+                        </p>
                       </div>
                       <div className="bg-[#71777B]/10 dark:bg-gray-700/30 p-3 rounded-lg border-l-4 border-[#71777B] dark:border-gray-500">
                         <p className="font-semibold text-[#014bac] dark:text-[#05d3f7]">

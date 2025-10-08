@@ -149,7 +149,7 @@ const Hero = () => {
             >
               <Link
                 href="#waitlist"
-                className="bg-gradient-to-r from-[#05d3f7] to-[#014bac] px-6 py-3 text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300"
+                className="flex items-center bg-gradient-to-r from-[#05d3f7] to-[#014bac] px-6 py-3  text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300"
               >
                 Join the Waitlist
               </Link>
@@ -162,17 +162,14 @@ const Hero = () => {
               </Link>
             </div>
 
-            {/* Educational videos teaser */}
-            <p className="mt-8 text-sm text-gray-600 dark:text-gray-400 italic">
-              Watch short educational videos to earn rewards — coming soon!
-            </p>
+            
           </div>
 
           {/* Right image section */}
           <div className="relative flex justify-center" ref={imgRef}>
             <Image
               src={mockup}
-              className="md:h-[550px] lg:ms-auto mx-auto drop-shadow-2xl rounded-3xl border-white dark:border-gray-700"
+              className="md:h-[520px] lg:ms-auto mx-auto drop-shadow-2xl rounded-3xl border-white dark:border-gray-700"
               alt="Education Illustration"
               priority
             />
