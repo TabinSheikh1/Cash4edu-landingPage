@@ -169,7 +169,7 @@ const Hero = () => {
           <div className="relative flex justify-center" ref={imgRef}>
             <Image
               src={mockup}
-              className="md:h-[520px] lg:ms-auto mx-auto drop-shadow-2xl rounded-3xl border-white dark:border-gray-700"
+              className="md:h-[580px] lg:ms-auto mx-auto drop-shadow-2xl rounded-3xl border-white dark:border-gray-700"
               alt="Education Illustration"
               priority
             />
