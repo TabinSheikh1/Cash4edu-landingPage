@@ -15,15 +15,15 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "davidbrown0321098@gmail.com", // your Gmail
-        pass: "gagk pxmi tizj ddkb", // your App Password
+        user: "info@cash4edu", // your Gmail
+        pass: "", // your App Password
       },
     });
 
     // ✅ Email content (sent to you / admin)
     const mailOptions = {
-      from: "davidbrown0321098@gmail.com",
-      to: "davidbrown0321098@gmail.com", // you receive it
+      from: "info@cash4edu",
+      to: "info@cash4edu", // you receive it
       subject: "🤝 New Partner Interest — Cash 4 Edu",
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; padding: 20px;">
