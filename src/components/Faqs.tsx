@@ -110,10 +110,10 @@ const stats = [
 ];
 
 const EduAsk = () => {
-  const sectionRef = useRef(null);
-  const leftRef = useRef(null);
-  const rightRef = useRef(null);
-  const [open, setOpen] = useState(0);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const leftRef = useRef<HTMLDivElement | null>(null);
+  const rightRef = useRef<HTMLDivElement | null>(null);
+  const [open, setOpen] = useState<number | null>(0);
 
   useEffect(() => {
     gsap.fromTo(
@@ -169,11 +169,15 @@ const EduAsk = () => {
                     </span>
                     {faq.q}
                   </button>
-                  {open === idx && (
-                    <div className="py-2 pl-10 pr-2 text-black/80 dark:text-gray-300 text-base">
-                      {faq.a}
-                    </div>
-                  )}
+
+                  {/* Smooth Expand/Collapse Without Layout Shift */}
+                  <div
+                    className={`overflow-hidden transition-all duration-500 pl-10 pr-2 text-black/80 dark:text-gray-300 text-base ${
+                      open === idx ? "max-h-40 py-2 opacity-100" : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    {faq.a}
+                  </div>
                 </div>
               ))}
             </div>

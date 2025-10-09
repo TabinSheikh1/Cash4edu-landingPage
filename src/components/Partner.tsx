@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import handshakes from "@/assets/images/handshakes.jpg";
+import handshakes from "@/assets/images/HandShake2.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
