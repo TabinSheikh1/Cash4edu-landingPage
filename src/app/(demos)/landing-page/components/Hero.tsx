@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import iterior from "@/assets/images/interior.png";
 import bg3 from "@/assets/images/home/bg-3.png";
 import Link from "next/link";
-import mockup from "../../../../../public/images/mackup.png"
+import mockup from "../../../../../public/images/mockup.png"
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -71,16 +71,8 @@ const About = () => {
       );
     }
 
-    // Floating animation on image
-    if (imgRef.current) {
-      gsap.to(imgRef.current, {
-        y: 15,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-      });
-    }
+    // ❌ Removed floating animation on image
+    // The image will now stay static in place
   }, []);
 
   return (

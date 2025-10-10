@@ -12,6 +12,7 @@ import Testimonials from "@/components/Testimonials";
 import HowItWork from "@/components/Howitwork";
 import Faqs from "@/components/Faqs";
 import SocialProof from "@/components/Social";
+import TeamSection from "@/components/OurTeam";
 
 
 
@@ -23,9 +24,10 @@ const page = () => {
       <About />
       <HowItWork/>
       <Features />
-      <SocialProof/>
+      {/* <SocialProof/> */}
       <Waitlist/>
       <GetApp />
+      <TeamSection/>
       <Partner />
       <Faqs />
       <Testimonials />

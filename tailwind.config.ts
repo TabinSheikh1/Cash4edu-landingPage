@@ -36,10 +36,42 @@ const config: Config = {
         black: "#000000",
         muted: "#707070",
       },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+        'float-slow': 'float-slow 8s ease-in-out infinite',
+        'float-slower': 'float-slower 12s ease-in-out infinite',
+        'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+      },
       keyframes: {
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
           "50%": { transform: "rotate(3deg)" },
+        },
+        'float-slow': {
+          '0%, 100%': { 
+            transform: 'translateY(0px) rotate(0deg)' 
+          },
+          '50%': { 
+            transform: 'translateY(-20px) rotate(180deg)' 
+          },
+        },
+        'float-slower': {
+          '0%, 100%': { 
+            transform: 'translateY(0px) rotate(0deg)' 
+          },
+          '50%': { 
+            transform: 'translateY(10px) rotate(90deg)' 
+          },
+        },
+        'pulse-slow': {
+          '0%, 100%': { 
+            opacity: '0.5',
+            transform: 'scale(1)' 
+          },
+          '50%': { 
+            opacity: '0.8',
+            transform: 'scale(1.1)' 
+          },
         },
       },
       spacing: {
